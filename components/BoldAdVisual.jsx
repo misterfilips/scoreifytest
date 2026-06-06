@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useRef } from "react";
 import { useInView, FloatCard, ArrowUp, CheckMark } from "./AdVisualKit";
 
 function CheckRow({ label }) {
@@ -15,6 +16,17 @@ function CheckRow({ label }) {
 
 export default function BoldAdVisual() {
   const [ref, inView] = useInView();
+  const videoRef = useRef(null);
+
+  // Set muted + start playback imperatively so the `muted` property never
+  // appears in the server markup (avoids a hydration mismatch).
+  useEffect(() => {
+    const v = videoRef.current;
+    if (!v) return;
+    v.muted = true;
+    const p = v.play();
+    if (p && p.catch) p.catch(() => {});
+  }, []);
 
   return (
     <div ref={ref} className="relative mx-auto max-w-md px-6 py-8 sm:px-10">
@@ -30,10 +42,9 @@ export default function BoldAdVisual() {
             <span className="ml-2 text-[11px] font-medium text-slate-400">Sponsored · Reel</span>
           </div>
           <video
+            ref={videoRef}
             className="block aspect-[9/16] w-full object-cover"
-            autoPlay
             loop
-            muted
             playsInline
             preload="metadata"
             poster="/vids/weight-loss-poster.jpg"

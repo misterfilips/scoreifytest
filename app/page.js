@@ -6,6 +6,7 @@ import Showcase from "@/components/Showcase";
 import TrustLevels from "@/components/TrustLevels";
 import Process from "@/components/Process";
 import Features from "@/components/Features";
+import BuiltFor from "@/components/BuiltFor";
 import Service from "@/components/Service";
 import Comparison from "@/components/Comparison";
 import FAQ from "@/components/FAQ";
@@ -23,6 +24,7 @@ export default function Page() {
       <TrustLevels />
       <Process />
       <Features />
+      <BuiltFor />
       <Service />
       <Comparison />
       <FAQ />

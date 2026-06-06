@@ -3,8 +3,8 @@
 // dropdown, and the dynamic /who-we-serve/[slug] pages.
 //
 // Per vertical:
-//   sections  -> the numbered 01-04 image+text blocks, written to the
-//                specific realities of that industry
+//   sections  -> the numbered 01-04 image+text blocks, each led by the
+//                benefit Scoreify brings that specific industry
 //   features  -> the "What you get" grid (Scoreify's deliverables)
 
 export const verticals = [
@@ -18,23 +18,23 @@ export const verticals = [
       "Run your semaglutide and tirzepatide weight-loss programs on accounts Meta already trusts. Lower costs, more approvals, and accounts that stay live.",
     sections: [
       {
-        title: "The most scrutinized category on Meta right now",
-        body: "GLP-1 demand exploded and Meta's enforcement followed. Compounded semaglutide and tirzepatide draw extra scrutiny, and most advertisers lose accounts faster than they can warm new ones.",
-        points: ["Compounded formulations flagged by default", "New accounts banned before they ramp", "Trusted history keeps you in market"],
-      },
-      {
-        title: "Run the weight-loss creative that converts",
-        body: "The angles that sell GLP-1 are the same ones cold accounts get blocked for. Trusted accounts give you the headroom to run results-led creative within Meta's rules.",
+        title: "Run the weight-loss creative that actually converts",
+        body: "We put you on accounts with the headroom to run results-led semaglutide and tirzepatide creative within Meta's rules. The angles that drive GLP-1 sales get approved instead of blocked.",
         points: ["Outcome-led creative that clears review", "Before-and-after within policy", "Direct response without throttling"],
       },
       {
-        title: "Protect your cost per acquisition at scale",
-        body: "GLP-1 acquisition costs climb fast when CPMs are high and learning resets every time an account dies. Trusted accounts lower CPMs and keep campaigns out of permanent relaunch.",
-        points: ["Lower CPMs on high-intent audiences", "No relearning after a ban", "Predictable acquisition cost"],
+        title: "Lower your cost per acquisition",
+        body: "Trusted accounts reach high-intent weight-loss audiences at lower CPMs, and your campaigns never reset learning from a ban. Your acquisition cost drops and stays predictable.",
+        points: ["Lower CPMs on high-intent audiences", "No relearning after a shutdown", "Predictable CAC at scale"],
+      },
+      {
+        title: "Scale spend on what's working",
+        body: "You get the account headroom to pour budget into winning GLP-1 campaigns without tripping limits or triggering reviews. Growth stops being capped by your account.",
+        points: ["Push budget on winners", "No spend ceilings", "Scale without new-account risk"],
       },
       {
         title: "Stay in market when the category gets squeezed",
-        body: "Every time Meta tightens on weight loss, brands on cold accounts go dark. Years of clean spend in this exact category keep you running when competitors disappear.",
+        body: "Years of clean spend in weight loss keep you delivering when Meta tightens and competitors on cold accounts go dark. You keep selling while the category resets around you.",
         points: ["Survive category crackdowns", "Daily monitoring and fast fixes", "Consistent delivery month over month"],
       },
     ],
@@ -57,23 +57,23 @@ export const verticals = [
       "Advertise sildenafil, tadalafil, and men's performance programs on accounts built to clear review and keep delivering.",
     sections: [
       {
-        title: "An industry Meta blocks on reflex",
-        body: "Sexual-health language trips Meta's filters before a human ever sees the ad. Most ED brands burn through accounts getting rejected for compliant offers.",
-        points: ["Fewer reflex rejections", "Compliant offers actually reviewed", "Accounts that survive the category"],
-      },
-      {
-        title: "Run direct response that names the problem",
-        body: "ED converts on directness, but cold accounts punish the exact language that performs. Trusted accounts have the headroom to run clear, problem-aware messaging within policy.",
-        points: ["Problem-aware angles that clear review", "Performance creative without throttling", "Headroom cold accounts don't have"],
+        title: "Get your ED creative approved, not auto-blocked",
+        body: "We run you on accounts that get sexual-health creative reviewed instead of rejected on reflex. Your compliant sildenafil and tadalafil offers actually make it live.",
+        points: ["Approvals for ED creative", "Fewer reflex rejections", "Problem-aware angles that clear review"],
       },
       {
         title: "Lower CAC on a high-LTV product",
-        body: "Subscriptions make men's health lucrative, but only if acquisition stays cheap. Trusted accounts lower CPMs and keep funnels delivering so LTV outruns CAC.",
+        body: "Trusted accounts reach men's-health buyers at lower CPMs and keep your funnels delivering without interruption. On a subscription product, the gap between LTV and CAC widens fast.",
         points: ["Lower CPMs on men's-health audiences", "Uninterrupted funnel delivery", "Healthier LTV to CAC"],
       },
       {
+        title: "Run direct response with room to scale",
+        body: "You get the headroom to run clear, performance-driven messaging and push spend behind it. The creative that converts runs at the budget you want.",
+        points: ["Performance creative without throttling", "Headroom cold accounts don't have", "Scale spend on winners"],
+      },
+      {
         title: "Keep funnels live through enforcement waves",
-        body: "When Meta sweeps the category, ED advertisers on cold accounts vanish overnight. Established trust keeps your delivery steady while competitors scramble.",
+        body: "When Meta sweeps the category, our accounts keep delivering while competitors disappear. Established trust means your funnels stay on.",
         points: ["Stay live through sweeps", "Same-day flag resolution", "Steady, predictable delivery"],
       },
     ],
@@ -96,24 +96,24 @@ export const verticals = [
       "Advertise finasteride and minoxidil regrowth programs on accounts that approve the creative others get blocked for.",
     sections: [
       {
-        title: "Before-and-after is your best creative and your biggest risk",
-        body: "Regrowth results sell, but before-and-after is exactly what cold accounts get blocked for. Trusted accounts let you run the proof that converts within Meta's rules.",
+        title: "Run the before-and-after proof that converts",
+        body: "We put you on accounts that approve regrowth before-and-after creative within Meta's rules. The proof that sells hair-loss treatment gets to run.",
         points: ["Before-and-after within policy", "Results-led creative that clears review", "Proof without the bans"],
       },
       {
         title: "Advertise prescription regrowth without rejection",
-        body: "Finasteride and minoxidil are compliant products that still trip Meta's filters. Trusted accounts get your prescription offers reviewed and approved instead of auto-rejected.",
+        body: "Finasteride and minoxidil offers clear review on our accounts instead of getting auto-rejected. Your prescription programs stay live and selling.",
         points: ["Prescription offers that run", "Fewer reflexive rejections", "Approvals others can't get"],
       },
       {
         title: "Win a crowded category on cost",
-        body: "Hair loss is competitive and CPMs decide who scales. Trusted accounts reach the same men for less, so your budget outworks brands stuck on cold accounts.",
+        body: "Trusted accounts reach the same men at lower CPMs, so your budget outworks competitors stuck on cold accounts. You scale while they stall.",
         points: ["Lower CPMs in a crowded auction", "Budget that stretches further", "Outperform low-trust competitors"],
       },
       {
         title: "Stay live as the category tightens",
-        body: "Health enforcement reaches hair loss too. Real account history keeps you delivering when others get pulled.",
-        points: ["Survive crackdowns", "Daily monitoring", "Consistent delivery"],
+        body: "Real account history keeps you delivering when health enforcement reaches hair loss. You keep running while others get pulled.",
+        points: ["Survive crackdowns", "Daily monitoring and fast fixes", "Consistent delivery"],
       },
     ],
     features: [
@@ -135,23 +135,23 @@ export const verticals = [
       "Advertise men's and women's hormone therapy on accounts Meta trusts, with the headroom to scale and the stability to stay live.",
     sections: [
       {
-        title: "A category Meta enforces hard and inconsistently",
-        body: "TRT and HRT sit in a gray zone Meta polices aggressively and unpredictably. Trusted accounts give you stable footing where everyone else gets whiplashed.",
-        points: ["Stability in a gray-zone category", "Fewer inconsistent rejections", "Accounts that hold"],
-      },
-      {
-        title: "Run education-led creative that still performs",
-        body: "Hormone therapy sells on education and outcomes, and both draw scrutiny on cold accounts. Trusted accounts give you the room to run them within policy.",
+        title: "Run education and outcome creative that performs",
+        body: "You get the headroom to run the education-led and outcome-driven angles hormone therapy sells on, within policy. The creative that works gets approved.",
         points: ["Outcome and education angles within policy", "Performance without throttling", "Headroom to test"],
       },
       {
-        title: "Protect acquisition on a long-LTV patient",
-        body: "Hormone patients are high-value and long-retained, so acquisition economics matter. Trusted accounts lower CPMs and keep delivery steady so each patient pays off.",
+        title: "Lower acquisition cost on a long-LTV patient",
+        body: "Trusted accounts reach the right patients at lower CPMs and keep delivery steady. With long-retained patients, lower CAC compounds into real margin.",
         points: ["Lower CPMs on the right patients", "Uninterrupted delivery", "Stronger acquisition economics"],
       },
       {
+        title: "Scale spend with stable footing",
+        body: "We put you on accounts that hold in a category Meta enforces unpredictably, so you can grow spend without whiplash. Stability is what lets you scale.",
+        points: ["Grow spend without limits", "Stability in a gray-zone category", "Fewer inconsistent rejections"],
+      },
+      {
         title: "Stay standing through enforcement",
-        body: "When Meta tightens on hormones, cold accounts disappear. Years of clean spend keep you live.",
+        body: "Years of clean spend keep you live when Meta tightens on hormones. You keep acquiring while cold accounts disappear.",
         points: ["Survive category crackdowns", "Same-day flag resolution", "Predictable delivery"],
       },
     ],
@@ -174,23 +174,23 @@ export const verticals = [
       "Scale patient acquisition across your services on accounts Meta already trusts, without the rejections and bans that throttle telehealth advertisers.",
     sections: [
       {
-        title: "Many regulated services, one fragile ad account",
-        body: "Telehealth platforms advertise across multiple regulated treatments, and any one of them can take an account down. Trusted accounts give your whole operation a stable base.",
-        points: ["One stable base for every service", "Multi-treatment risk contained", "Accounts built to stay live"],
-      },
-      {
-        title: "Approvals across every service line",
-        body: "Each treatment you offer has its own compliance landmines. Trusted accounts get creative across your service lines through review instead of blocked.",
+        title: "Get approvals across every service line",
+        body: "We run you on accounts that clear creative for each regulated treatment you offer. Your whole menu of services gets to advertise instead of getting blocked one by one.",
         points: ["Approvals across treatments", "Fewer service-by-service rejections", "Headroom to launch new lines"],
       },
       {
-        title: "Scale acquisition without scaling risk",
-        body: "Growth means more spend and more exposure on cold accounts. Trusted accounts let you scale patient acquisition without the bans that cap telehealth advertisers.",
-        points: ["Scale spend safely", "Lower CPMs across services", "No relearning after a shutdown"],
+        title: "Scale patient acquisition without scaling risk",
+        body: "Trusted accounts let you grow spend across services without the bans that cap telehealth advertisers. You scale acquisition on a base built to stay live.",
+        points: ["Scale spend safely", "No relearning after a shutdown", "Accounts built to stay live"],
+      },
+      {
+        title: "Lower CPMs across your services",
+        body: "We reach patients for less across every service line, so the savings go back into growth. Better economics across the board, not just one funnel.",
+        points: ["Lower CPMs across services", "Budget that stretches", "Stronger unit economics"],
       },
       {
         title: "Keep the whole platform live",
-        body: "One flagged treatment shouldn't take down your entire funnel. Daily monitoring and fast fixes keep acquisition running across the board.",
+        body: "One flagged treatment won't take down your operation. Daily monitoring and fast fixes keep acquisition running across every service.",
         points: ["Protect the whole operation", "Same-day flag resolution", "Consistent delivery"],
       },
     ],
@@ -213,23 +213,23 @@ export const verticals = [
       "Advertise regulated products across your catalog on accounts Meta trusts, with the approvals and stability online pharmacies rarely get.",
     sections: [
       {
-        title: "Every SKU is a compliance risk",
-        body: "An online pharmacy advertises a catalog of regulated products, and each one can flag the account. Trusted accounts give you a base that holds across the whole range.",
-        points: ["A base that holds across the catalog", "Per-SKU risk contained", "Accounts built to stay live"],
-      },
-      {
         title: "Get regulated products approved",
-        body: "Compliant pharmacy offers still get auto-rejected on cold accounts. Trusted accounts get your products reviewed and approved instead of blocked on sight.",
+        body: "We run you on accounts that get pharmacy creative reviewed and approved instead of blocked on sight. More of your catalog gets to advertise.",
         points: ["Approvals for regulated products", "Fewer reflexive rejections", "Headroom to advertise more lines"],
       },
       {
         title: "Scale the catalog on better economics",
-        body: "Margins are tight and CPMs decide what's profitable to advertise. Trusted accounts lower costs so more of your catalog is worth scaling.",
+        body: "Lower CPMs make more of your SKUs profitable to advertise, so you can scale across the catalog. Tight margins stretch further on trusted accounts.",
         points: ["Lower CPMs across products", "More SKUs worth advertising", "Budget that stretches"],
       },
       {
+        title: "Grow spend on a base that holds",
+        body: "You get the account headroom to scale across product lines without any single SKU taking you down. Growth without the per-SKU risk.",
+        points: ["Scale across product lines", "Per-SKU risk contained", "No spend ceilings"],
+      },
+      {
         title: "Stay live through pharmacy crackdowns",
-        body: "Pharmacy is a perennial enforcement target. Real account history keeps you delivering when cold accounts get pulled.",
+        body: "Real account history keeps you delivering when Meta targets pharmacy. You keep selling while cold accounts get pulled.",
         points: ["Survive crackdowns", "Daily monitoring and fast fixes", "Predictable delivery"],
       },
     ],

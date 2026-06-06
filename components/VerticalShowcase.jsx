@@ -21,7 +21,7 @@ export default function VerticalShowcase({ vertical }) {
           </p>
         </div>
 
-        <div className="mt-16 space-y-20 md:mt-20 md:space-y-32">
+        <div className="mt-20 space-y-28 md:mt-28 md:space-y-44">
           {sections.map((it, i) => {
             const Icon = icons[i % icons.length];
             const flip = i % 2 === 1;

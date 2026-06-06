@@ -21,10 +21,10 @@ export default function Page() {
       <LogoStrip />
       <Stats />
       <Showcase />
+      <BuiltFor />
       <TrustLevels />
       <Process />
       <Features />
-      <BuiltFor />
       <Service />
       <Comparison />
       <FAQ />

@@ -2,6 +2,7 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import LogoStrip from "./LogoStrip";
 import CTA from "./CTA";
+import VerticalShowcase from "./VerticalShowcase";
 import { Placeholder } from "./Hero";
 import { Arrow, ShieldCheck, TrendDown, CheckCircle, Gauge, Bolt, Clock } from "./Icons";
 
@@ -61,8 +62,11 @@ export default function VerticalPage({ vertical }) {
 
       <LogoStrip />
 
-      {/* Features */}
-      <section className="py-20 md:py-28">
+      {/* Industry-specific showcase */}
+      <VerticalShowcase vertical={vertical} />
+
+      {/* Features ("What you get") */}
+      <section className="border-t border-slate-200 bg-slate-50 py-20 md:py-28">
         <div className="container-x">
           <div className="mx-auto max-w-2xl text-center">
             <span className="eyebrow">What you get</span>

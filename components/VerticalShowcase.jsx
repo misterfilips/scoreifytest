@@ -1,0 +1,74 @@
+import { Placeholder } from "./Hero";
+import { ShieldCheck, TrendDown, Bolt, Lock, Gauge, CheckCircle } from "./Icons";
+
+const icons = [ShieldCheck, TrendDown, Bolt, Lock, Gauge, CheckCircle];
+
+export default function VerticalShowcase({ vertical }) {
+  const sections = vertical.sections || [];
+  const total = String(sections.length).padStart(2, "0");
+
+  return (
+    <section className="py-20 md:py-28">
+      <div className="container-x">
+        <div className="mx-auto max-w-2xl text-center">
+          <span className="eyebrow">Why Scoreify for {vertical.name}</span>
+          <h2 className="mt-5 text-3xl font-extrabold tracking-tight text-slate-900 md:text-4xl">
+            Built around what {vertical.name} brands face
+          </h2>
+          <p className="mt-4 text-slate-600">
+            Your category creates problems cold accounts can&apos;t survive. Here&apos;s what changes
+            when you run on accounts Meta already trusts.
+          </p>
+        </div>
+
+        <div className="mt-16 space-y-20 md:mt-20 md:space-y-32">
+          {sections.map((it, i) => {
+            const Icon = icons[i % icons.length];
+            const flip = i % 2 === 1;
+            const n = String(i + 1).padStart(2, "0");
+            return (
+              <div key={it.title} className="grid items-center gap-10 md:grid-cols-2 md:gap-16">
+                <div className={flip ? "md:order-2" : ""}>
+                  <div className="flex items-center gap-4">
+                    <span className="text-sm font-semibold tracking-[0.2em] text-accent">
+                      {n} <span className="text-slate-300">/ {total}</span>
+                    </span>
+                    <span className="h-px flex-1 bg-gradient-to-r from-accent/40 to-transparent" />
+                  </div>
+                  <div className="mt-5 inline-flex h-12 w-12 items-center justify-center rounded-xl border border-blue-100 bg-blue-50 text-accent">
+                    <Icon className="h-6 w-6" />
+                  </div>
+                  <h3 className="mt-5 text-2xl font-bold tracking-tight text-slate-900 md:text-3xl">
+                    {it.title}
+                  </h3>
+                  <p className="mt-4 text-slate-600">{it.body}</p>
+                  <ul className="mt-6 space-y-3">
+                    {it.points.map((p) => (
+                      <li key={p} className="flex items-center gap-3 text-sm text-slate-700">
+                        <span className="flex h-5 w-5 items-center justify-center rounded-full bg-blue-100 text-accent">
+                          <svg viewBox="0 0 24 24" className="h-3 w-3" fill="none" stroke="currentColor" strokeWidth="3">
+                            <path d="M5 12.5l4.5 4.5L19 7" strokeLinecap="round" strokeLinejoin="round" />
+                          </svg>
+                        </span>
+                        {p}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className={flip ? "md:order-1" : ""}>
+                  <div className="relative">
+                    <div className="glow pointer-events-none absolute -inset-8 opacity-70" />
+                    <div className="relative overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-lg shadow-slate-200/60">
+                      <Placeholder ratio="aspect-[4/3]" label={`${vertical.name} ${n}`} />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+}

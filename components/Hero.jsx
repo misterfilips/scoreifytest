@@ -57,14 +57,43 @@ export default function Hero() {
           style={{ animationDelay: "260ms" }}
         >
           <div className="absolute -inset-px rounded-2xl bg-gradient-to-b from-accent/25 to-transparent opacity-50 blur-2xl" />
-          <div className="relative overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-2xl shadow-slate-300/40">
-            <div className="flex items-center gap-2 border-b border-slate-200 bg-slate-50 px-4 py-3">
-              <span className="h-3 w-3 rounded-full bg-slate-300" />
-              <span className="h-3 w-3 rounded-full bg-slate-300" />
-              <span className="h-3 w-3 rounded-full bg-slate-300" />
-              <span className="ml-3 text-xs text-slate-400">scoreify / account health dashboard</span>
+          <div className="relative grid overflow-hidden rounded-2xl border border-slate-200 bg-white text-left shadow-2xl shadow-slate-300/40 md:grid-cols-2">
+            {/* Case study summary */}
+            <div className="flex flex-col p-8 md:p-10">
+              <div className="flex items-center justify-between">
+                <span className="eyebrow">Case study</span>
+                <div className="flex h-8 w-24 items-center justify-center rounded-md border border-dashed border-slate-300 text-[10px] uppercase tracking-[0.15em] text-slate-400">
+                  Logo
+                </div>
+              </div>
+
+              {/* headline placeholder */}
+              <div className="mt-6 space-y-2.5">
+                <div className="h-3.5 w-11/12 rounded-full bg-slate-200/80" />
+                <div className="h-3.5 w-3/5 rounded-full bg-slate-200/80" />
+              </div>
+
+              {/* result metrics placeholder */}
+              <div className="mt-8 grid grid-cols-3 gap-4">
+                {[0, 1, 2].map((i) => (
+                  <div key={i}>
+                    <div className="h-7 w-16 rounded-md bg-slate-100" />
+                    <div className="mt-2 h-2.5 w-12 rounded-full bg-slate-200/70" />
+                  </div>
+                ))}
+              </div>
+
+              {/* read link placeholder */}
+              <div className="mt-auto flex items-center gap-2 pt-8 text-accent-deep/50">
+                <div className="h-2.5 w-28 rounded-full bg-slate-200/70" />
+                <Arrow className="h-4 w-4" />
+              </div>
             </div>
-            <Placeholder ratio="aspect-[16/9]" label="Dashboard preview" />
+
+            {/* Case study visual */}
+            <div className="border-t border-slate-200 md:border-l md:border-t-0">
+              <Placeholder ratio="h-full min-h-[240px]" label="Case study image" />
+            </div>
           </div>
         </div>
       </div>

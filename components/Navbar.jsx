@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Logo } from "./Icons";
+import { Wordmark } from "./Icons";
 
 const links = [
   { label: "How it works", href: "#how" },
@@ -30,9 +30,8 @@ export default function Navbar() {
       }`}
     >
       <nav className="container-x flex h-16 items-center justify-between">
-        <a href="#top" className="flex items-center gap-2.5">
-          <Logo />
-          <span className="text-[17px] font-bold tracking-tight text-slate-900">Scoreify</span>
+        <a href="#top" className="flex items-center">
+          <Wordmark className="h-6 w-auto text-slate-900" />
         </a>
 
         <div className="hidden items-center gap-1 md:flex">

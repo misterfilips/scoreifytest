@@ -1,4 +1,4 @@
-import { Logo } from "./Icons";
+import { Wordmark } from "./Icons";
 
 const groups = [
   {
@@ -35,9 +35,8 @@ export default function Footer() {
       <div className="container-x py-16">
         <div className="grid gap-12 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
           <div>
-            <a href="#top" className="flex items-center gap-2.5">
-              <Logo />
-              <span className="text-[17px] font-bold tracking-tight text-slate-900">Scoreify</span>
+            <a href="#top" className="inline-flex items-center">
+              <Wordmark className="h-7 w-auto text-slate-900" />
             </a>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-slate-500">
               Trusted Meta ad accounts for LegitScript-certified health and wellness brands. Lower

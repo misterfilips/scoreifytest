@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-display: "Inter", system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+  color: #0f172a;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: rgba(37, 99, 235, 0.18);
+  color: #0f172a;
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-container px-6 md:px-8;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 rounded-full border border-blue-100 bg-blue-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-accent-deep;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white transition-all duration-200 hover:bg-accent-deep hover:shadow-[0_10px_30px_-8px_rgba(37,99,235,0.6)] focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/40;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-900 transition-all duration-200 hover:border-slate-400 hover:bg-slate-50;
+  }
+
+  .card {
+    @apply rounded-2xl border border-slate-200 bg-white p-7 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-slate-300 hover:shadow-lg;
+  }
+}
+
+/* Subtle grid backdrop */
+.grid-backdrop {
+  background-image:
+    linear-gradient(to right, rgba(15, 23, 42, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(15, 23, 42, 0.05) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 35%, transparent 100%);
+}
+
+.glow {
+  background: radial-gradient(circle at center, rgba(37, 99, 235, 0.14), transparent 70%);
+}

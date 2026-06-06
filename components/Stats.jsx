@@ -1,23 +1,59 @@
-const stats = [
-  { value: "Lower", label: "CPMs than cold accounts", sub: "Your budget reaches further" },
-  { value: "Same day", label: "Flags resolved", sub: "Every account monitored daily" },
-  { value: "Day one", label: "Trusted from launch", sub: "Years of clean history behind it" },
-  { value: "Yours", label: "Page, followers, and data", sub: "Nothing changes hands" },
+"use client";
+
+import { useEffect, useState } from "react";
+import { useInView } from "./AdVisualKit";
+
+// NOTE: values are placeholders — swap in real figures when confirmed.
+const metrics = [
+  { value: 43, prefix: "", suffix: "%", label: "Lower CPMs", sub: "vs. cold health accounts" },
+  { value: 41, prefix: "", suffix: "%", label: "Lower CPAs", sub: "more conversions per dollar" },
+  { value: 98, prefix: "", suffix: "%", label: "Ad approval rate", sub: "creative that clears review" },
 ];
 
+function useCountUp(target, inView, duration = 1400) {
+  const [val, setVal] = useState(0);
+  useEffect(() => {
+    if (!inView) return;
+    let raf;
+    const start = performance.now();
+    const tick = (now) => {
+      const t = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - t, 3);
+      setVal(Math.round(eased * target));
+      if (t < 1) raf = requestAnimationFrame(tick);
+    };
+    raf = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(raf);
+  }, [target, inView, duration]);
+  return val;
+}
+
+function Metric({ m, inView }) {
+  const val = useCountUp(m.value, inView);
+  return (
+    <div className="bg-white p-8 text-center">
+      <div className="bg-gradient-to-r from-accent to-accent-deep bg-clip-text text-4xl font-extrabold tracking-tight text-transparent md:text-5xl">
+        {m.prefix}
+        {val}
+        {m.suffix}
+      </div>
+      <div className="mt-3 text-sm font-semibold text-slate-900">{m.label}</div>
+      <div className="mt-1 text-xs text-slate-500">{m.sub}</div>
+    </div>
+  );
+}
+
 export default function Stats() {
+  const [ref, inView] = useInView(0.3);
   return (
     <section className="py-16">
       <div className="container-x">
-        <div className="grid grid-cols-1 gap-px overflow-hidden rounded-2xl border border-slate-200 bg-slate-200 sm:grid-cols-2 lg:grid-cols-4">
-          {stats.map((s) => (
-            <div key={s.label} className="bg-white p-7">
-              <div className="bg-gradient-to-r from-accent to-accent-deep bg-clip-text text-3xl font-extrabold tracking-tight text-transparent md:text-4xl">
-                {s.value}
-              </div>
-              <div className="mt-2 text-sm font-semibold text-slate-900">{s.label}</div>
-              <div className="mt-1 text-xs text-slate-500">{s.sub}</div>
-            </div>
+        <div
+          ref={ref}
+          className="grid grid-cols-1 gap-px overflow-hidden rounded-2xl border border-slate-200 bg-slate-200 sm:grid-cols-3"
+        >
+          {metrics.map((m) => (
+            <Metric key={m.label} m={m} inView={inView} />
           ))}
         </div>
       </div>

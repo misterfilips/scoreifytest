@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import LogoStrip from "@/components/LogoStrip";
 import Stats from "@/components/Stats";
+import CaseStudies from "@/components/CaseStudies";
 import Showcase from "@/components/Showcase";
 import TrustLevels from "@/components/TrustLevels";
 import Process from "@/components/Process";
@@ -20,6 +21,7 @@ export default function Page() {
       <Hero />
       <LogoStrip />
       <Stats />
+      <CaseStudies />
       <Showcase />
       <BuiltFor />
       <TrustLevels />

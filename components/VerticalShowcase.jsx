@@ -1,5 +1,4 @@
-import { Placeholder } from "./Hero";
-import { verticalVisuals } from "./verticalVisuals";
+import ShowcaseVisual from "./showcaseVisuals";
 import { ShieldCheck, TrendDown, Bolt, Lock, Gauge, CheckCircle } from "./Icons";
 
 const icons = [ShieldCheck, TrendDown, Bolt, Lock, Gauge, CheckCircle];
@@ -7,7 +6,6 @@ const icons = [ShieldCheck, TrendDown, Bolt, Lock, Gauge, CheckCircle];
 export default function VerticalShowcase({ vertical }) {
   const sections = vertical.sections || [];
   const total = String(sections.length).padStart(2, "0");
-  const customVisuals = verticalVisuals[vertical.slug];
 
   return (
     <section className="py-20 md:py-28">
@@ -59,18 +57,7 @@ export default function VerticalShowcase({ vertical }) {
                 </div>
 
                 <div className={flip ? "md:order-1" : ""}>
-                  {(() => {
-                    const Custom = customVisuals?.[i];
-                    if (Custom) return <Custom />;
-                    return (
-                      <div className="relative">
-                        <div className="glow pointer-events-none absolute -inset-8 opacity-70" />
-                        <div className="relative overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-lg shadow-slate-200/60">
-                          <Placeholder ratio="aspect-[4/3]" label={`${vertical.name} ${n}`} />
-                        </div>
-                      </div>
-                    );
-                  })()}
+                  <ShowcaseVisual slug={vertical.slug} index={i} label={`${vertical.name} ${n}`} />
                 </div>
               </div>
             );

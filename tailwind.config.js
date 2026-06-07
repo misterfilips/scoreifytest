@@ -49,12 +49,17 @@ module.exports = {
           "0%, 100%": { transform: "translateY(0)" },
           "50%": { transform: "translateY(9px)" },
         },
+        marquee: {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-50%)" },
+        },
       },
       animation: {
         "fade-up": "fade-up 0.6s ease-out both",
         "pulse-soft": "pulse-soft 3s ease-in-out infinite",
         float: "float 5.5s ease-in-out infinite",
         "float-rev": "float-rev 6.5s ease-in-out infinite",
+        marquee: "marquee 32s linear infinite",
       },
     },
   },

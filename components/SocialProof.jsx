@@ -8,7 +8,7 @@ function TpStar({ className = "h-3 w-3" }) {
   );
 }
 
-function TrustpilotRating() {
+function TrustpilotRating({ dark }) {
   return (
     <div className="flex flex-col items-center gap-2">
       <div className="flex items-center gap-0.5">
@@ -17,14 +17,14 @@ function TrustpilotRating() {
             <TpStar className="h-3 w-3 text-white" />
           </span>
         ))}
-        <span className="relative flex h-5 w-5 items-center justify-center overflow-hidden rounded-[2px] bg-slate-300">
+        <span className={`relative flex h-5 w-5 items-center justify-center overflow-hidden rounded-[2px] ${dark ? "bg-white/25" : "bg-slate-300"}`}>
           <span className="absolute inset-y-0 left-0 w-1/2 bg-[#00b67a]" />
           <TpStar className="relative h-3 w-3 text-white" />
         </span>
       </div>
-      <p className="text-sm text-slate-500">
-        Rated <span className="font-semibold text-slate-800">Excellent</span> on{" "}
-        <span className="inline-flex items-center gap-1 font-bold text-slate-800">
+      <p className={`text-sm ${dark ? "text-slate-400" : "text-slate-500"}`}>
+        Rated <span className={`font-semibold ${dark ? "text-slate-200" : "text-slate-800"}`}>Excellent</span> on{" "}
+        <span className={`inline-flex items-center gap-1 font-bold ${dark ? "text-white" : "text-slate-800"}`}>
           <TpStar className="h-3.5 w-3.5 text-[#00b67a]" />
           Trustpilot
         </span>
@@ -33,10 +33,10 @@ function TrustpilotRating() {
   );
 }
 
-export default function SocialProof() {
+export default function SocialProof({ dark = false }) {
   return (
     <div className="flex flex-col items-center">
-      <TrustpilotRating />
+      <TrustpilotRating dark={dark} />
 
       <div className="relative mt-8 w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,#000_8%,#000_92%,transparent)]">
         <div className="flex w-max animate-marquee items-center gap-12 pr-12 motion-reduce:animate-none">
@@ -46,7 +46,9 @@ export default function SocialProof() {
               src={src}
               alt=""
               aria-hidden="true"
-              className="h-9 w-auto flex-none object-contain opacity-55 brightness-0 transition-opacity duration-200 hover:opacity-90"
+              className={`h-9 w-auto flex-none object-contain transition-opacity duration-200 ${
+                dark ? "opacity-70 hover:opacity-100" : "opacity-55 brightness-0 hover:opacity-90"
+              }`}
             />
           ))}
         </div>

@@ -53,6 +53,18 @@ module.exports = {
           from: { transform: "translateX(0)" },
           to: { transform: "translateX(-50%)" },
         },
+        "drift-a": {
+          "0%, 100%": { transform: "translate(0, 0) scale(1)" },
+          "50%": { transform: "translate(8%, 6%) scale(1.18)" },
+        },
+        "drift-b": {
+          "0%, 100%": { transform: "translate(0, 0) scale(1.05)" },
+          "50%": { transform: "translate(-9%, 5%) scale(0.92)" },
+        },
+        "drift-c": {
+          "0%, 100%": { transform: "translate(0, 0) scale(1)" },
+          "50%": { transform: "translate(6%, -8%) scale(1.22)" },
+        },
       },
       animation: {
         "fade-up": "fade-up 0.6s ease-out both",
@@ -60,6 +72,9 @@ module.exports = {
         float: "float 5.5s ease-in-out infinite",
         "float-rev": "float-rev 6.5s ease-in-out infinite",
         marquee: "marquee 32s linear infinite",
+        "drift-a": "drift-a 17s ease-in-out infinite",
+        "drift-b": "drift-b 21s ease-in-out infinite",
+        "drift-c": "drift-c 19s ease-in-out infinite",
       },
     },
   },

@@ -17,10 +17,10 @@ export default function CaseStudies() {
         <div className="mx-auto max-w-2xl text-center">
           <span className="eyebrow">Case studies</span>
           <h2 className="mt-5 text-3xl font-extrabold tracking-tight text-slate-900 md:text-4xl">
-            Real brands, real scale
+            How our clients scale on Meta
           </h2>
           <p className="mt-4 text-slate-600">
-            How regulated health and wellness brands grow on accounts Meta already trusts.
+            Results from regulated health and wellness brands running on accounts Meta already trusts.
           </p>
         </div>
 
@@ -39,7 +39,7 @@ export default function CaseStudies() {
                 <div className="mt-7 grid grid-cols-3 gap-4">
                   {active.metrics.map((m) => (
                     <div key={m.label}>
-                      <div className="bg-gradient-to-r from-accent to-accent-deep bg-clip-text text-2xl font-extrabold tracking-tight text-transparent md:text-3xl">
+                      <div className="text-2xl font-extrabold tracking-tight text-accent-deep md:text-3xl">
                         {m.value}
                       </div>
                       <div className="mt-1 text-xs leading-tight text-slate-500">{m.label}</div>
@@ -48,9 +48,12 @@ export default function CaseStudies() {
                 </div>
 
                 {active.quote && (
-                  <blockquote className="mt-7 border-l-2 border-accent/40 pl-4 text-sm italic leading-relaxed text-slate-600">
-                    “{active.quote.text}”
-                    <footer className="mt-2 not-italic text-xs font-semibold text-slate-700">
+                  <blockquote className="mt-7 text-sm italic leading-relaxed text-slate-600">
+                    <span aria-hidden="true" className="mb-1 block font-serif text-4xl leading-none text-accent/25">
+                      &ldquo;
+                    </span>
+                    {active.quote.text}
+                    <footer className="mt-3 not-italic text-xs font-semibold text-slate-700">
                       {active.quote.author}
                       {active.quote.role ? `, ${active.quote.role}` : ""}
                     </footer>

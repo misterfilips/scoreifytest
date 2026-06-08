@@ -32,7 +32,7 @@ function Metric({ m, inView }) {
   const val = useCountUp(m.value, inView);
   return (
     <div className="bg-white p-8 text-center">
-      <div className="bg-gradient-to-r from-accent to-accent-deep bg-clip-text text-4xl font-extrabold tracking-tight text-transparent md:text-5xl">
+      <div className="text-4xl font-extrabold tracking-tight text-accent-deep md:text-5xl">
         {m.prefix}
         {val}
         {m.suffix}

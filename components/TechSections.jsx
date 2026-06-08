@@ -81,7 +81,7 @@ function TierLadder({ inView }) {
           </div>
         ))}
       </div>
-      <p className="mt-4 text-xs text-slate-500">Same campaign, different tier, different CPM.</p>
+      <p className="mt-4 text-xs text-slate-500">The same campaign pays a different CPM at each trust tier.</p>
     </Widget>
   );
 }
@@ -187,7 +187,7 @@ function PixelFlow({ inView }) {
         <Col title="Cold account" ok={false} tint="border-slate-200 bg-slate-50" />
         <Col title="Scoreify" ok tint="border-accent/30 bg-blue-50/50" />
       </div>
-      <p className="mt-4 text-xs text-slate-500">Same pixel. Credentialed accounts keep the signal Meta strips elsewhere.</p>
+      <p className="mt-4 text-xs text-slate-500">Credentialed accounts keep the conversion signal Meta strips from cold health accounts.</p>
     </Widget>
   );
 }
@@ -196,7 +196,7 @@ function Escalation({ inView }) {
   const Pill = ({ children, tone }) => (
     <span
       className={`inline-flex items-center rounded-full px-2.5 py-1 text-[11px] font-semibold ${
-        tone === "bad" ? "bg-red-50 text-red-500" : tone === "good" ? "bg-emerald-50 text-emerald-600" : "bg-slate-100 text-slate-600"
+        tone === "bad" ? "bg-red-50 text-red-600" : tone === "good" ? "bg-emerald-50 text-emerald-600" : "bg-slate-100 text-slate-600"
       }`}
     >
       {children}

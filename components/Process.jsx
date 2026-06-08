@@ -29,7 +29,7 @@ export default function Process() {
             From cleared to scaling in three steps
           </h2>
           <p className="mt-4 text-slate-600">
-            You handle the marketing. We handle the trust layer underneath.
+            We maintain the trusted account your campaigns run on, so you can focus on growth.
           </p>
         </div>
 

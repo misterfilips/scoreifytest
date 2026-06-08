@@ -15,3 +15,7 @@ next-env.d.ts
 /socials/
 /vids/
 /Logos/
+
+# Local design tooling (impeccable skill) - keep out of the site repo
+/.claude/skills/
+/.claude/agents/

@@ -1,8 +1,9 @@
 import { Arrow, ShieldCheck } from "./Icons";
+import SocialProof from "./SocialProof";
 
 export default function Hero() {
   return (
-    <section id="top" className="relative overflow-hidden pt-32 pb-20 md:pt-40 md:pb-28">
+    <section id="top" className="relative overflow-hidden pt-28 pb-12 md:pt-32 md:pb-16">
       <div className="grid-backdrop pointer-events-none absolute inset-0" />
       <div className="glow pointer-events-none absolute left-1/2 top-0 h-[640px] w-[900px] -translate-x-1/2 opacity-80" />
 
@@ -20,7 +21,7 @@ export default function Hero() {
             style={{ animationDelay: "60ms" }}
           >
             Run regulated health offers on Meta.
-            <span className="block bg-gradient-to-r from-accent to-accent-deep bg-clip-text text-transparent">
+            <span className="block text-accent-deep">
               Without the bans.
             </span>
           </h1>
@@ -34,14 +35,14 @@ export default function Hero() {
           </p>
 
           <div
-            className="mt-9 flex flex-col items-center justify-center gap-3 animate-fade-up sm:flex-row"
+            className="mt-8 flex flex-col items-center justify-center gap-3 animate-fade-up sm:flex-row"
             style={{ animationDelay: "180ms" }}
           >
             <a href="#cta" className="btn-primary w-full sm:w-auto">
               Book a free consultation
               <Arrow className="h-4 w-4" />
             </a>
-            <a href="#how" className="btn-ghost w-full sm:w-auto">
+            <a href="/how-it-works" className="btn-ghost w-full sm:w-auto">
               See how it works
             </a>
           </div>
@@ -49,6 +50,10 @@ export default function Hero() {
           <p className="mt-5 text-xs text-slate-400 animate-fade-up" style={{ animationDelay: "220ms" }}>
             Trusted ad accounts. Your brand stays entirely in your hands.
           </p>
+        </div>
+
+        <div className="mt-10 animate-fade-up" style={{ animationDelay: "280ms" }}>
+          <SocialProof />
         </div>
       </div>
     </section>

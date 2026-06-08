@@ -24,8 +24,8 @@ export default function CTA() {
               </a>
             </div>
             <p className="mt-5 text-xs text-blue-100/80">
-              For certified, compliant health &amp; wellness advertisers only. No guarantees, no
-              workarounds.
+              For certified, compliant health &amp; wellness advertisers only. We don’t promise
+              specific results or work around Meta’s policies.
             </p>
           </div>
         </div>

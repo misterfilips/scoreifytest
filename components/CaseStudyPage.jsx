@@ -86,7 +86,7 @@ export default function CaseStudyPage({ study }) {
           <div className="mx-auto grid max-w-3xl grid-cols-1 gap-px overflow-hidden rounded-2xl border border-slate-200 bg-slate-200 sm:grid-cols-3">
             {study.metrics.map((m) => (
               <div key={m.label} className="bg-white p-7 text-center">
-                <div className="bg-gradient-to-r from-accent to-accent-deep bg-clip-text text-3xl font-extrabold tracking-tight text-transparent md:text-4xl">
+                <div className="text-3xl font-extrabold tracking-tight text-accent-deep md:text-4xl">
                   {m.value}
                 </div>
                 <div className="mt-2 text-sm font-medium text-slate-500">{m.label}</div>
@@ -110,8 +110,11 @@ export default function CaseStudyPage({ study }) {
         <div className="container-x">
           <div className="mx-auto max-w-3xl">
             {study.quote && (
-              <blockquote className="mb-10 border-l-2 border-accent/40 pl-5 text-lg italic leading-relaxed text-slate-700">
-                “{study.quote.text}”
+              <blockquote className="mb-10 text-lg italic leading-relaxed text-slate-700">
+                <span aria-hidden="true" className="mb-2 block font-serif text-5xl leading-none text-accent/25">
+                  &ldquo;
+                </span>
+                {study.quote.text}
                 <footer className="mt-3 not-italic text-sm font-semibold text-slate-600">
                   {study.quote.author}
                   {study.quote.role ? `, ${study.quote.role}` : ""}

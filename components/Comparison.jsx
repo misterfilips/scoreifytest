@@ -39,7 +39,7 @@ export default function Comparison() {
         <div className="mx-auto max-w-2xl text-center">
           <span className="eyebrow">How we compare</span>
           <h2 className="mt-5 text-3xl font-extrabold tracking-tight text-slate-900 md:text-4xl">
-            Same rules. Different starting line.
+            Trusted accounts vs. cold accounts and resellers
           </h2>
         </div>
 

@@ -23,11 +23,11 @@ export default function TrustLevels() {
         <div className="mx-auto max-w-2xl text-center">
           <span className="eyebrow">The part most people miss</span>
           <h2 className="mt-5 text-3xl font-extrabold tracking-tight text-slate-900 md:text-4xl">
-            There isn’t one way to be “allowed” on Meta. There are levels.
+            Meta has trust tiers most advertisers never see
           </h2>
           <p className="mt-4 text-slate-600">
-            Most brands sit at the bottom and assume that’s just how health advertising works. It
-            isn’t.
+            Most brands sit at the bottom tier without knowing it, and assume the high costs and
+            sudden bans are just part of advertising in health.
           </p>
         </div>
 
@@ -61,7 +61,7 @@ export default function TrustLevels() {
             health categories. That track record is what earns Meta’s trust.
           </p>
           <p className="mt-4 text-sm font-medium text-accent-deep">
-            You don’t have to spend years earning that trust. Run on accounts that already have it.
+            Our accounts already carry the trust most brands spend years trying to build on their own.
           </p>
         </div>
       </div>

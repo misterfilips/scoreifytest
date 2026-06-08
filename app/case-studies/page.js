@@ -21,10 +21,10 @@ export default function CaseStudiesIndex() {
         <div className="container-x relative text-center">
           <span className="eyebrow">Case studies</span>
           <h1 className="mx-auto mt-5 max-w-2xl text-4xl font-extrabold tracking-tight text-slate-900 md:text-5xl">
-            Real brands, real scale
+            How our clients scale on Meta
           </h1>
           <p className="mx-auto mt-4 max-w-xl text-lg text-slate-600">
-            How regulated health and wellness brands grow on accounts Meta already trusts.
+            Results from regulated health and wellness brands running on accounts Meta already trusts.
           </p>
         </div>
       </section>
@@ -49,7 +49,7 @@ export default function CaseStudiesIndex() {
                 <div className="mt-6 grid grid-cols-3 gap-4">
                   {c.metrics.map((m) => (
                     <div key={m.label}>
-                      <div className="bg-gradient-to-r from-accent to-accent-deep bg-clip-text text-2xl font-extrabold tracking-tight text-transparent">
+                      <div className="text-2xl font-extrabold tracking-tight text-accent-deep">
                         {m.value}
                       </div>
                       <div className="mt-1 text-xs leading-tight text-slate-500">{m.label}</div>

@@ -14,8 +14,8 @@ export default function VerticalShowcase({ vertical }) {
             Built around what {vertical.name} brands face
           </h2>
           <p className="mt-4 text-slate-600">
-            Your category creates problems cold accounts can&apos;t survive. Here&apos;s what changes
-            when you run on accounts Meta already trusts.
+            The problems your category runs into on Meta, and what changes once you&apos;re on an
+            account it already trusts.
           </p>
         </div>
 

@@ -5,6 +5,7 @@ import CaseStudies from "@/components/CaseStudies";
 import Showcase from "@/components/Showcase";
 import TrustLevels from "@/components/TrustLevels";
 import Process from "@/components/Process";
+import SavingsSection from "@/components/SavingsSection";
 import BuiltFor from "@/components/BuiltFor";
 import FAQ from "@/components/FAQ";
 import CTA from "@/components/CTA";
@@ -21,6 +22,7 @@ export default function Page() {
       <BuiltFor />
       <TrustLevels />
       <Process />
+      <SavingsSection />
       <FAQ />
       <CTA />
       <Footer />

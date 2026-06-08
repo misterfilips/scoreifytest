@@ -3,8 +3,9 @@
 import { useEffect, useState } from "react";
 import { useInView } from "./AdVisualKit";
 
-// NOTE: values are placeholders — swap in real figures when confirmed.
+// NOTE: percentage values are placeholders — swap in real figures when confirmed.
 const metrics = [
+  { value: 200, prefix: "$", suffix: "M+", label: "Ad spend processed", sub: "across regulated health verticals" },
   { value: 43, prefix: "", suffix: "%", label: "Lower CPMs", sub: "vs. cold health accounts" },
   { value: 41, prefix: "", suffix: "%", label: "Lower CPAs", sub: "more conversions per dollar" },
   { value: 98, prefix: "", suffix: "%", label: "Ad approval rate", sub: "creative that clears review" },
@@ -50,7 +51,7 @@ export default function Stats() {
       <div className="container-x">
         <div
           ref={ref}
-          className="grid grid-cols-1 gap-px overflow-hidden rounded-2xl border border-slate-200 bg-slate-200 sm:grid-cols-3"
+          className="grid grid-cols-1 gap-px overflow-hidden rounded-2xl border border-slate-200 bg-slate-200 sm:grid-cols-2 lg:grid-cols-4"
         >
           {metrics.map((m) => (
             <Metric key={m.label} m={m} inView={inView} />

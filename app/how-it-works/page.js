@@ -3,6 +3,8 @@ import Footer from "@/components/Footer";
 import CTA from "@/components/CTA";
 import Comparison from "@/components/Comparison";
 import TechSections from "@/components/TechSections";
+import SavingsCalculator from "@/components/SavingsCalculator";
+import { Arrow } from "@/components/Icons";
 
 export const metadata = {
   title: "How it works | Scoreify",
@@ -27,12 +29,38 @@ export default function HowItWorks() {
             Meta runs hidden trust systems that decide what you pay and what gets approved. Here’s how
             Scoreify operates at the top of every one of them.
           </p>
+
+          <div className="mt-8 flex justify-center">
+            <a
+              href="#savings"
+              className="group inline-flex items-center gap-2 text-sm font-semibold text-accent-deep"
+            >
+              Estimate your savings
+              <Arrow className="h-4 w-4 rotate-90 transition-transform duration-200 group-hover:translate-y-0.5" />
+            </a>
+          </div>
         </div>
       </section>
 
       <TechSections />
 
       <Comparison />
+
+      <section id="savings" className="scroll-mt-24 py-20 md:py-28">
+        <div className="container-x">
+          <div className="mx-auto max-w-2xl text-center">
+            <h2 className="text-3xl font-extrabold tracking-tight text-slate-900 md:text-4xl">
+              See what it’s worth to you
+            </h2>
+            <p className="mt-4 text-slate-600">
+              Drag your monthly ad spend to estimate your net savings on trusted accounts, after our fee.
+            </p>
+          </div>
+          <div className="mt-10">
+            <SavingsCalculator />
+          </div>
+        </div>
+      </section>
 
       <CTA />
       <Footer />

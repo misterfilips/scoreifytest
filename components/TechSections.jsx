@@ -318,7 +318,7 @@ export default function TechSections() {
   return (
     <section className="py-20 md:py-28">
       <div className="container-x">
-        <div className="space-y-20 md:space-y-32">
+        <div className="space-y-28 md:space-y-44">
           {sections.map((s, i) => (
             <SectionRow key={s.title} n={String(i + 1).padStart(2, "0")} total={total} s={s} flip={i % 2 === 1} />
           ))}

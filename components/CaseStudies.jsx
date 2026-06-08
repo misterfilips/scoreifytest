@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Arrow } from "./Icons";
-import { Placeholder } from "./Hero";
+import CaseStudyAsset from "./CaseStudyAsset";
 import { caseStudies } from "@/content/caseStudies";
 
 export default function CaseStudies() {
@@ -70,7 +70,7 @@ export default function CaseStudies() {
 
               {/* visual */}
               <div className="relative border-t border-slate-200 md:border-l md:border-t-0">
-                <Placeholder ratio="h-full min-h-[260px]" label={`${active.brand} case study`} />
+                <CaseStudyAsset logo={active.logo} brand={active.brand} ratio="h-full min-h-[260px]" />
               </div>
             </div>
           </div>

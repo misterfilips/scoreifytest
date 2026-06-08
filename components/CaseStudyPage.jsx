@@ -2,7 +2,7 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import CTA from "./CTA";
 import { Arrow } from "./Icons";
-import { Placeholder } from "./Hero";
+import CaseStudyAsset from "./CaseStudyAsset";
 
 function Block({ block }) {
   if (block.h2) return <h2 className="mt-10 text-2xl font-bold tracking-tight text-slate-900">{block.h2}</h2>;
@@ -99,8 +99,8 @@ export default function CaseStudyPage({ study }) {
       {/* Visual */}
       <section className="pb-12">
         <div className="container-x">
-          <div className="mx-auto max-w-3xl overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
-            <Placeholder ratio="aspect-[16/9]" label={`${study.brand} visual`} />
+          <div className="mx-auto max-w-3xl overflow-hidden rounded-2xl border border-slate-200 shadow-sm">
+            <CaseStudyAsset logo={study.logo} brand={study.brand} ratio="aspect-[16/9]" />
           </div>
         </div>
       </section>

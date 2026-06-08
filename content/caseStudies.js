@@ -7,6 +7,7 @@ export const caseStudies = [
   {
     slug: "freya-meds",
     brand: "Freya Meds",
+    logo: "/partners/logo-8.png",
     vertical: "Compounded GLP-1",
     headline: "Freya Meds scaled to 450,000 patients in Meta’s hardest category",
     summary:
@@ -22,6 +23,7 @@ export const caseStudies = [
   {
     slug: "we-relieve",
     brand: "We Relieve",
+    logo: "/partners/logo-10.png",
     vertical: "Pain relief",
     headline: "We Relieve scaled $10k to $300k monthly revenue on Meta ads",
     summary:

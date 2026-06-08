@@ -3,10 +3,9 @@ import Footer from "./Footer";
 import LogoStrip from "./LogoStrip";
 import CTA from "./CTA";
 import VerticalShowcase from "./VerticalShowcase";
+import SavingsSection from "./SavingsSection";
 import { Placeholder } from "./Hero";
-import { Arrow, ShieldCheck, TrendDown, CheckCircle, Gauge, Bolt, Clock } from "./Icons";
-
-const icons = [TrendDown, CheckCircle, Gauge, Bolt, Clock, ShieldCheck];
+import { Arrow, ShieldCheck } from "./Icons";
 
 export default function VerticalPage({ vertical }) {
   return (
@@ -65,31 +64,10 @@ export default function VerticalPage({ vertical }) {
       {/* Industry-specific showcase */}
       <VerticalShowcase vertical={vertical} />
 
-      {/* Features ("What you get") */}
-      <section className="border-t border-slate-200 bg-slate-50 py-20 md:py-28">
-        <div className="container-x">
-          <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-extrabold tracking-tight text-slate-900 md:text-4xl">
-              How Scoreify helps {vertical.name} brands
-            </h2>
-          </div>
-
-          <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {vertical.features.map((f, i) => {
-              const Icon = icons[i % icons.length];
-              return (
-                <div key={f.title} className="card group">
-                  <div className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-slate-200 bg-slate-50 text-accent transition-colors group-hover:border-blue-200 group-hover:bg-blue-50">
-                    <Icon className="h-5.5 w-5.5" />
-                  </div>
-                  <h3 className="mt-5 text-base font-bold text-slate-900">{f.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-slate-600">{f.body}</p>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
+      {/* Savings calculator (replaces the old features grid) */}
+      <div className="border-t border-slate-200">
+        <SavingsSection />
+      </div>
 
       <CTA />
       <Footer />

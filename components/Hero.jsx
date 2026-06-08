@@ -4,16 +4,15 @@ import SocialProof from "./SocialProof";
 export default function Hero() {
   return (
     <section id="top" className="relative overflow-hidden bg-[#070b16] pt-28 pb-14 md:pt-32 md:pb-20">
-      {/* Animated aurora gradient */}
+      {/* Flowing gradient */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
-        <div className="absolute -left-[10%] -top-[20%] h-[34rem] w-[34rem] rounded-full bg-[radial-gradient(circle,#2563eb,transparent_68%)] opacity-50 blur-[90px] animate-drift-a motion-reduce:animate-none" />
-        <div className="absolute right-[-8%] top-[-10%] h-[32rem] w-[32rem] rounded-full bg-[radial-gradient(circle,#4f46e5,transparent_68%)] opacity-45 blur-[90px] animate-drift-b motion-reduce:animate-none" />
-        <div className="absolute left-[28%] bottom-[-30%] h-[36rem] w-[36rem] rounded-full bg-[radial-gradient(circle,#0891b2,transparent_70%)] opacity-40 blur-[100px] animate-drift-c motion-reduce:animate-none" />
-        <div className="absolute right-[18%] bottom-[-18%] h-[26rem] w-[26rem] rounded-full bg-[radial-gradient(circle,#3b82f6,transparent_70%)] opacity-40 blur-[90px] animate-drift-a motion-reduce:animate-none" />
+        <div className="absolute inset-[-25%] bg-[linear-gradient(115deg,#0b1226,#1d4ed8,#4f46e5,#0891b2,#2563eb,#1d4ed8,#0b1226)] bg-[length:300%_300%] opacity-70 blur-[60px] animate-gradient-flow motion-reduce:animate-none" />
       </div>
-      {/* Faint grid + legibility vignette */}
+      {/* Faint grid */}
       <div className="pointer-events-none absolute inset-0 [background-image:linear-gradient(to_right,rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.04)_1px,transparent_1px)] [background-size:64px_64px] [mask-image:radial-gradient(ellipse_70%_60%_at_50%_30%,#000,transparent)]" />
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-[#070b16]/30 via-transparent to-[#070b16]" />
+      {/* Legibility vignette */}
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_60%_55%_at_50%_42%,rgba(7,11,22,0.55),transparent)]" />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-[#070b16]/40 via-transparent to-[#070b16]" />
 
       <div className="container-x relative">
         <div className="mx-auto max-w-3xl text-center">

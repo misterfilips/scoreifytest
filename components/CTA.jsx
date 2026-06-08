@@ -14,19 +14,13 @@ export default function CTA() {
               If you’re LegitScript certified and spending on Meta, book a call. We’ll show you what
               running at the top tier looks like for your brand.
             </p>
-            <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
+            <div className="mt-9 flex justify-center">
               <a
                 href="mailto:hello@scoreify.io"
                 className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-accent-deep transition-all duration-200 hover:bg-blue-50 sm:w-auto"
               >
                 Book a free consultation
                 <Arrow className="h-4 w-4" />
-              </a>
-              <a
-                href="#how"
-                className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-white/40 bg-white/10 px-6 py-3 text-sm font-semibold text-white transition-all duration-200 hover:bg-white/20 sm:w-auto"
-              >
-                Review how it works
               </a>
             </div>
             <p className="mt-5 text-xs text-blue-100/80">

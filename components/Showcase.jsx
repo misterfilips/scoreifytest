@@ -60,7 +60,6 @@ export default function Showcase() {
 
         <div className="mt-20 space-y-28 md:mt-28 md:space-y-44">
           {items.map((it, i) => {
-            const Icon = it.icon;
             const flip = i % 2 === 1;
             return (
               <div
@@ -74,10 +73,7 @@ export default function Showcase() {
                     </span>
                     <span className="h-px flex-1 bg-gradient-to-r from-accent/40 to-transparent" />
                   </div>
-                  <div className="mt-5 inline-flex h-12 w-12 items-center justify-center rounded-xl border border-blue-100 bg-blue-50 text-accent">
-                    <Icon className="h-6 w-6" />
-                  </div>
-                  <h3 className="mt-5 text-2xl font-bold tracking-tight text-slate-900 md:text-3xl">
+                  <h3 className="mt-6 text-2xl font-bold tracking-tight text-slate-900 md:text-3xl">
                     {it.title}
                   </h3>
                   <p className="mt-4 text-slate-600">{it.body}</p>

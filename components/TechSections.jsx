@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useInView } from "./AdVisualKit";
-import { Layers, ShieldCheck, Gauge, Eye, Bolt, CheckCircle } from "./Icons";
+import { Layers, ShieldCheck, Gauge, Eye, Bolt } from "./Icons";
 
 /* ---------- helpers ---------- */
 
@@ -281,7 +281,6 @@ const sections = [
 
 function SectionRow({ n, total, s, flip }) {
   const [ref, inView] = useInView(0.25);
-  const Icon = s.icon;
   const W = s.Widget;
   return (
     <div ref={ref} className="grid items-center gap-10 md:grid-cols-2 md:gap-16">
@@ -292,10 +291,7 @@ function SectionRow({ n, total, s, flip }) {
           </span>
           <span className="h-px flex-1 bg-gradient-to-r from-accent/40 to-transparent" />
         </div>
-        <div className="mt-5 inline-flex h-12 w-12 items-center justify-center rounded-xl border border-blue-100 bg-blue-50 text-accent">
-          <Icon className="h-6 w-6" />
-        </div>
-        <h2 className="mt-5 text-2xl font-bold tracking-tight text-slate-900 md:text-3xl">{s.title}</h2>
+        <h2 className="mt-6 text-2xl font-bold tracking-tight text-slate-900 md:text-3xl">{s.title}</h2>
         <p className="mt-4 text-slate-600">{s.body}</p>
         <ul className="mt-6 space-y-3">
           {s.points.map((p) => (

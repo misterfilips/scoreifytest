@@ -50,8 +50,7 @@ export default function FAQ() {
       <div className="container-x">
         <div className="grid gap-12 md:grid-cols-[0.8fr_1.2fr]">
           <div>
-            <span className="eyebrow">FAQ</span>
-            <h2 className="mt-5 text-3xl font-extrabold tracking-tight text-slate-900 md:text-4xl">
+            <h2 className="text-3xl font-extrabold tracking-tight text-slate-900 md:text-4xl">
               Questions, answered
             </h2>
             <p className="mt-4 text-slate-600">

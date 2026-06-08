@@ -15,8 +15,7 @@ export default function CaseStudies() {
     <section id="case-studies" className="py-20 md:py-28">
       <div className="container-x">
         <div className="mx-auto max-w-2xl text-center">
-          <span className="eyebrow">Case studies</span>
-          <h2 className="mt-5 text-3xl font-extrabold tracking-tight text-slate-900 md:text-4xl">
+          <h2 className="text-3xl font-extrabold tracking-tight text-slate-900 md:text-4xl">
             How our clients scale on Meta
           </h2>
           <p className="mt-4 text-slate-600">

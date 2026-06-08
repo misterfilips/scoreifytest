@@ -38,8 +38,7 @@ export default function Features() {
     <section className="bg-slate-50 py-20 md:py-28">
       <div className="container-x">
         <div className="mx-auto max-w-2xl text-center">
-          <span className="eyebrow">What you get</span>
-          <h2 className="mt-5 text-3xl font-extrabold tracking-tight text-slate-900 md:text-4xl">
+          <h2 className="text-3xl font-extrabold tracking-tight text-slate-900 md:text-4xl">
             Everything a trusted account changes
           </h2>
         </div>

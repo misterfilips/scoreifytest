@@ -280,19 +280,13 @@ const sections = [
   },
 ];
 
-function SectionRow({ n, total, s, flip }) {
+function SectionRow({ s, flip }) {
   const [ref, inView] = useInView(0.25);
   const W = s.Widget;
   return (
     <div ref={ref} className="grid items-center gap-10 md:grid-cols-2 md:gap-16">
       <div className={flip ? "md:order-2" : ""}>
-        <div className="flex items-center gap-4">
-          <span className="text-sm font-semibold tracking-[0.2em] text-accent">
-            {n} <span className="text-slate-300">/ {total}</span>
-          </span>
-          <span className="h-px flex-1 bg-gradient-to-r from-accent/40 to-transparent" />
-        </div>
-        <h2 className="mt-6 text-2xl font-bold tracking-tight text-slate-900 md:text-3xl">{s.title}</h2>
+        <h2 className="text-2xl font-bold tracking-tight text-slate-900 md:text-3xl">{s.title}</h2>
         <p className="mt-4 text-slate-600">{s.body}</p>
         <ul className="mt-6 space-y-3">
           {s.points.map((p) => (
@@ -314,13 +308,12 @@ function SectionRow({ n, total, s, flip }) {
 }
 
 export default function TechSections() {
-  const total = String(sections.length).padStart(2, "0");
   return (
     <section className="py-20 md:py-28">
       <div className="container-x">
         <div className="space-y-28 md:space-y-44">
           {sections.map((s, i) => (
-            <SectionRow key={s.title} n={String(i + 1).padStart(2, "0")} total={total} s={s} flip={i % 2 === 1} />
+            <SectionRow key={s.title} s={s} flip={i % 2 === 1} />
           ))}
         </div>
       </div>

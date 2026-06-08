@@ -21,8 +21,7 @@ export default function TrustLevels() {
       <div className="glow pointer-events-none absolute right-0 top-1/3 h-[500px] w-[500px] opacity-80" />
       <div className="container-x relative">
         <div className="mx-auto max-w-2xl text-center">
-          <span className="eyebrow">The part most people miss</span>
-          <h2 className="mt-5 text-3xl font-extrabold tracking-tight text-slate-900 md:text-4xl">
+          <h2 className="text-3xl font-extrabold tracking-tight text-slate-900 md:text-4xl">
             Meta has trust tiers most advertisers never see
           </h2>
           <p className="mt-4 text-slate-600">

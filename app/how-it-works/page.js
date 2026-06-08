@@ -21,8 +21,7 @@ export default function HowItWorks() {
         <div className="grid-backdrop pointer-events-none absolute inset-0" />
         <div className="glow pointer-events-none absolute left-1/2 top-0 h-[520px] w-[820px] -translate-x-1/2 opacity-80" />
         <div className="container-x relative text-center">
-          <span className="eyebrow">How it works</span>
-          <h1 className="mx-auto mt-5 max-w-3xl text-balance text-4xl font-extrabold leading-[1.08] tracking-tight text-slate-900 md:text-5xl">
+          <h1 className="mx-auto max-w-3xl text-balance text-4xl font-extrabold leading-[1.08] tracking-tight text-slate-900 md:text-5xl">
             The trust layer underneath your ads
           </h1>
           <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-slate-600">

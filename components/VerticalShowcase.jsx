@@ -3,14 +3,12 @@ import SectionCTAs from "./SectionCTAs";
 
 export default function VerticalShowcase({ vertical }) {
   const sections = vertical.sections || [];
-  const total = String(sections.length).padStart(2, "0");
 
   return (
     <section className="py-20 md:py-28">
       <div className="container-x">
         <div className="mx-auto max-w-2xl text-center">
-          <span className="eyebrow">Why Scoreify for {vertical.name}</span>
-          <h2 className="mt-5 text-3xl font-extrabold tracking-tight text-slate-900 md:text-4xl">
+          <h2 className="text-3xl font-extrabold tracking-tight text-slate-900 md:text-4xl">
             Built around what {vertical.name} brands face
           </h2>
           <p className="mt-4 text-slate-600">
@@ -26,13 +24,7 @@ export default function VerticalShowcase({ vertical }) {
             return (
               <div key={it.title} className="grid items-center gap-10 md:grid-cols-2 md:gap-16">
                 <div className={flip ? "md:order-2" : ""}>
-                  <div className="flex items-center gap-4">
-                    <span className="text-sm font-semibold tracking-[0.2em] text-accent">
-                      {n} <span className="text-slate-300">/ {total}</span>
-                    </span>
-                    <span className="h-px flex-1 bg-gradient-to-r from-accent/40 to-transparent" />
-                  </div>
-                  <h3 className="mt-6 text-2xl font-bold tracking-tight text-slate-900 md:text-3xl">
+                  <h3 className="text-2xl font-bold tracking-tight text-slate-900 md:text-3xl">
                     {it.title}
                   </h3>
                   <p className="mt-4 text-slate-600">{it.body}</p>

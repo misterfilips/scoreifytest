@@ -5,9 +5,8 @@ import { Wordmark } from "./Icons";
 import { verticals } from "@/content/verticals";
 
 const links = [
-  { label: "How it works", href: "/#how" },
+  { label: "How it works", href: "/how-it-works" },
   { label: "Why Scoreify", href: "/#why" },
-  { label: "Comparison", href: "/#comparison" },
   { label: "FAQ", href: "/#faq" },
 ];
 

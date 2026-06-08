@@ -4,15 +4,18 @@ const groups = [
   {
     title: "Product",
     links: [
-      { label: "Why Scoreify", href: "#why" },
-      { label: "How it works", href: "#how" },
-      { label: "Comparison", href: "#comparison" },
-      { label: "FAQ", href: "#faq" },
+      { label: "Why Scoreify", href: "/#why" },
+      { label: "How it works", href: "/how-it-works" },
+      { label: "Who we serve", href: "/#built-for" },
+      { label: "Case studies", href: "/case-studies" },
+      { label: "FAQ", href: "/#faq" },
     ],
   },
   {
-    title: "Company",
+    title: "Resources",
     links: [
+      { label: "Blog", href: "/blog" },
+      { label: "Best practices", href: "/best-practices" },
       { label: "Book a consultation", href: "#cta" },
       { label: "Contact", href: "mailto:hello@scoreify.io" },
     ],
@@ -35,7 +38,7 @@ export default function Footer() {
       <div className="container-x py-16">
         <div className="grid gap-12 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
           <div>
-            <a href="#top" className="inline-flex items-center">
+            <a href="/" className="inline-flex items-center">
               <Wordmark className="h-7 w-auto text-slate-900" />
             </a>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-slate-500">

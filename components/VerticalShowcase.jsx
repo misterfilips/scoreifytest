@@ -1,4 +1,5 @@
 import ShowcaseVisual from "./showcaseVisuals";
+import SectionCTAs from "./SectionCTAs";
 
 export default function VerticalShowcase({ vertical }) {
   const sections = vertical.sections || [];
@@ -47,6 +48,7 @@ export default function VerticalShowcase({ vertical }) {
                       </li>
                     ))}
                   </ul>
+                  <SectionCTAs />
                 </div>
 
                 <div className={flip ? "md:order-1" : ""}>

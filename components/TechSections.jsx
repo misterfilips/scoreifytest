@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useInView } from "./AdVisualKit";
+import SectionCTAs from "./SectionCTAs";
 import { Layers, ShieldCheck, Gauge, Eye, Bolt } from "./Icons";
 
 /* ---------- helpers ---------- */
@@ -303,6 +304,7 @@ function SectionRow({ n, total, s, flip }) {
             </li>
           ))}
         </ul>
+        <SectionCTAs showSecondary={false} />
       </div>
       <div className={flip ? "md:order-1" : ""}>
         <W inView={inView} />

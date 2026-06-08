@@ -2,6 +2,7 @@ import AdPerformanceVisual from "./AdPerformanceVisual";
 import BoldAdVisual from "./BoldAdVisual";
 import StabilityAdVisual from "./StabilityAdVisual";
 import OwnershipVisual from "./OwnershipVisual";
+import SectionCTAs from "./SectionCTAs";
 import { TrendDown, ShieldCheck, Bolt, Lock } from "./Icons";
 
 const items = [
@@ -89,6 +90,7 @@ export default function Showcase() {
                       </li>
                     ))}
                   </ul>
+                  <SectionCTAs />
                 </div>
 
                 <div className={flip ? "md:order-1" : ""}>

@@ -1,4 +1,4 @@
-const logos = Array.from({ length: 10 }, (_, i) => `/partners/logo-${i + 1}.png`);
+const logos = Array.from({ length: 11 }, (_, i) => `/partners/logo-${i + 1}.png`);
 
 export default function LogoStrip() {
   return (

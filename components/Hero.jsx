@@ -3,7 +3,7 @@ import SocialProof from "./SocialProof";
 
 export default function Hero() {
   return (
-    <section id="top" className="relative overflow-hidden bg-[#070b16] pt-28 pb-14 md:pt-32 md:pb-20">
+    <section id="top" className="relative flex min-h-screen flex-col justify-center overflow-hidden bg-[#070b16] pt-24 pb-16">
       {/* Flowing gradient */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
         <div className="absolute inset-[-25%] bg-[linear-gradient(115deg,#0b1226,#1d4ed8,#4f46e5,#0891b2,#2563eb,#1d4ed8,#0b1226)] bg-[length:300%_300%] opacity-70 blur-[60px] animate-gradient-flow motion-reduce:animate-none" />

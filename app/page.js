@@ -14,7 +14,7 @@ import Footer from "@/components/Footer";
 export default function Page() {
   return (
     <main className="relative">
-      <Navbar />
+      <Navbar overDark />
       <Hero />
       <Stats />
       <CaseStudies />

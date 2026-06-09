@@ -6,9 +6,9 @@ import { useInView } from "./AdVisualKit";
 // NOTE: percentage values are placeholders — swap in real figures when confirmed.
 const metrics = [
   { value: 200, prefix: "$", suffix: "M+", label: "Ad spend processed", sub: "across regulated health verticals" },
-  { value: 22, prefix: "", suffix: "%", label: "Lower CPMs", sub: "vs. cold health accounts" },
+  { value: 20, prefix: "", suffix: "%", label: "Lower CPMs", sub: "vs. cold health accounts" },
   { value: 30, prefix: "", suffix: "%", label: "Lower CPAs", sub: "more conversions per dollar" },
-  { value: 98, prefix: "", suffix: "%", label: "Ad approval rate", sub: "creative that clears review" },
+  { value: 96, prefix: "", suffix: "%", label: "Ad approval rate", sub: "creative that clears review" },
 ];
 
 function useCountUp(target, inView, duration = 1400) {

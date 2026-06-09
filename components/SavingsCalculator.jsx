@@ -3,8 +3,8 @@
 import { useState } from "react";
 import { Arrow } from "./Icons";
 
-// Average CPM advantage on trusted accounts (see the stats band / blog).
-const CPM_REDUCTION = 0.22;
+// Average CPA advantage on trusted accounts (see the stats band / blog).
+const CPA_REDUCTION = 0.3;
 const MIN = 50000;
 const MAX = 2000000;
 const STEP = 10000;
@@ -35,7 +35,7 @@ export default function SavingsCalculator() {
   const [spend, setSpend] = useState(250000);
   const custom = spend >= MAX;
   const fee = feeFor(spend);
-  const gross = spend * CPM_REDUCTION;
+  const gross = spend * CPA_REDUCTION;
   const net = custom ? null : gross - fee;
   const rawFee = spend * rateFor(spend);
   const rateLabel = custom ? "Custom" : rawFee < 2500 ? "min fee" : `${+(rateFor(spend) * 100).toFixed(2)}%`;
@@ -82,7 +82,7 @@ export default function SavingsCalculator() {
       ) : (
         <div className="mt-6 grid grid-cols-2 gap-3">
           <div className="rounded-xl bg-slate-50 p-4">
-            <div className="text-xs text-slate-500">Media saved on lower CPMs</div>
+            <div className="text-xs text-slate-500">Saved on lower CPAs</div>
             <div className="mt-1 text-xl font-bold text-slate-900">{usd(gross)}</div>
           </div>
           <div className="rounded-xl bg-slate-50 p-4">
@@ -105,7 +105,7 @@ export default function SavingsCalculator() {
       </a>
 
       <p className="mt-3 text-[11px] leading-relaxed text-slate-400">
-        Estimates only. Assumes an average 22% lower CPM on trusted accounts, net of the Scoreify fee.
+        Estimates only. Assumes an average 30% lower CPA on trusted accounts, net of the Scoreify fee.
         Actual results vary by vertical, creative, and account.
       </p>
     </div>

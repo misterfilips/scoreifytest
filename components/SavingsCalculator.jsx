@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Arrow } from "./Icons";
 
 // Average CPM advantage on trusted accounts (see the stats band / blog).
-const CPM_REDUCTION = 0.4;
+const CPM_REDUCTION = 0.22;
 const MIN = 50000;
 const MAX = 2000000;
 const STEP = 10000;
@@ -105,7 +105,7 @@ export default function SavingsCalculator() {
       </a>
 
       <p className="mt-3 text-[11px] leading-relaxed text-slate-400">
-        Estimates only. Assumes an average 40% lower CPM on trusted accounts, net of the Scoreify fee.
+        Estimates only. Assumes an average 22% lower CPM on trusted accounts, net of the Scoreify fee.
         Actual results vary by vertical, creative, and account.
       </p>
     </div>
